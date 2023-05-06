@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,shrink-to-fit=no,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <title>Verisure</title>
+    <link href="./static/css/styles-app.css" rel="stylesheet">
+    <link href="./static/css/main.css" rel="stylesheet">
+    <link href="./static/css/styles-inline.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function gup(name) {
+            var regexS = "[\\?&]" + name + "=([^&#]*)";
+            var regex = new RegExp(regexS);
+            var tmpURL = window.location.href;
+            var results = regex.exec(tmpURL);
+            if (results == null)
+                return "";
+            else
+                return results[1];
+        }
+        function msgD() {
+            $('.demo-msg-s').fadeIn(250);
+            setTimeout(function () {
+                $('.demo-msg-s').fadeOut(250);
+            }, 2000);
+        }
+        function msgDP() {
+            $('.demo-msg-popup').fadeIn(250);
+            setTimeout(function () {
+                $('.demo-msg-popup').fadeOut(250);
+            }, 2000);
+        }
+        $(document).ready(function () {
+            $('.btn-demo-msg').click(function () {
+                msgD();
+            });
+            $('.btn-demo-msg-a').click(function (e) {
+                e.preventDefault();
+                msgD();
+            });
+            $('.btn-demo-msg-popup').click(function () {
+                msgDP();
+            });
+        });
+    </script>
+</head>
+<div class="demo-msg demo-msg-s">
+    <p>Estás interactuando con una demo, para ver más accede a la app de tu alarma.</p>
+</div>
+<div class="demo-msg demo-msg-popup">
+    <p>Estás interactuando con una demo, para ver más accede a la app de tu alarma.</p>
+</div>
+
+<body>
+    <div id="root" style="overflow:auto;min-height:35em;width:100%;height:100%">
+        <div class="">
+            <div class="_1LVzKHudbtVmGL-QIspRjZ">
+                <div class="_2gPPPXopJdV7wtWFadyXrV">
+                    <div class="_36GMBLg_WZBpVPunw0rFvd">
+                        <div id-owa="Header-hamburger-icon-hamburger"
+                            class="lLgn_LpLUXuuA2mBj6_l9 ov4RRDiLoB6-1fC9WnMYz"></div>
+                    </div>
+                    <div class="_2tAsryRWAB59OCO1-Bfzwh"><img src="./resources/logos/logoSecuritas.svg" alt="logo"
+                            class="_1pUTBetqw44e6E4BIcadLR"></div>
+                    <div class="_3gLRyaJbxmbM5nwwSOBYyU">
+                        <div class="_1K_nHBVtMsY-7aa5-HUF5U">
+                            <div class="_3UcAATgWE-u85R4_NLNyCc">
+                                <div id-owa="Header-hamburger-CurrentInstallationBar-icon-installation-home"
+                                    class="lLgn_LpLUXuuA2mBj6_l9 _19Y80cbdHvmU0yhNZ_1D2x -Ic1bStNoceGh6ffUUGAr"></div>
+                                <div class="_2BPbAnhLD6T42B4bgwe59s"> Casa</div>
+
+                                <div id-owa="Header-hamburger-CurrentInstallationBar-hasMore-icon-arrow-down"
+                                    class="lLgn_LpLUXuuA2mBj6_l9 _6L4-B2gqN7zBvkBmOpUW_ _2ZKtsxGgkaeSun0dEBZx9g"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_1AYvGCfZS5QVWihkHi81EZ">
+                        <div><button id-owa="Header-hamburger-Short-LogoutButton-button"
+                                class="p7h9k3uoIBU5dnxiFq6S_ _1AriCW3Y_1Zcy4EbaHWQqI _2X5Ekd0wxY3EOnsiZjDKuZ">
+                                <div id-owa="Header-hamburger-Short-LogoutButton-label" class="_1zmvcav1PKZ5RL2kDRrPEj">
+                                    Cerrar sesión</div>
+                            </button><button id-owa="Header-hamburger-Large-LogoutButton-button"
+                                class="_2HgdaHaD4SNDDSFw0ZtW9C _38fjyISE29qC_B1MeCX1oC">
+                                <div id-owa="Header-hamburger-Large-LogoutButton-label" class="gIYiFxyTrS15oYmwPZMQX">
+                                    Cerrar sesión</div>
+                            </button></div>
+                    </div>
+                    <div class="_3MQByQXPPAsm0pM2Ln2Zc6"></div>
+                </div>
+                <div class="_2wV3JMiQu9BbujcQUqzmWd demo-app-container">
+
+                    <div class="_3ouQo9A_JvskMfQfiqMSzf" id-owa="Llaves y mandos">
+                        <div class="_1uHlaofHGq_j6kWMqKz8P">
+                            <div class="_22-3MYYMi4takgQOVBt-l">
+                                <div class="_2__bOU4IhKZg73_OI8SCtj">Llaves y mandos</div>
+                                <div class="_2qSItZTzwIJulgdtTsBo7V">
+                                    <div id-owa="Icon1-icon-question-mark"
+                                        class="lLgn_LpLUXuuA2mBj6_l9 pFTqZrJSMKaMFbwoiH6yI _3_TrKQDe8kz-_kKBjTh53e">
+                                    </div>
+                                    <div id-owa="Icon1-icon-customize-settings"
+                                        class="lLgn_LpLUXuuA2mBj6_l9 _1FrZKXmx-gcSzayIr-PYb5 _3_TrKQDe8kz-_kKBjTh53e">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_1YI1CMSvLAfwulmFaySZG6">
+                                <div class="_1hK6IQ7iTeYb0Q1giOljLw">
+                                    <div class="light _1fAGc69CBmjd5j_UUzjnaI">Llaves y mandos activados</div>
+                                    <div class="_3HDsV4_vcBu9tHEwavwT7g tOKXJqk-0nsqCuQ5hH8n5 _1xLvLpekfEhg6T4CvYrSQa">
+                                        <div class="_1psM3HcidG3b2nQuCZKbtD">
+                                            <div class="_3xOjntVXl5Gr78pDkxQa7b">
+                                                <div id-owa="ActivatedEntry-Elena-icon-starkey"
+                                                    class="lLgn_LpLUXuuA2mBj6_l9 DvT3xRkrM913oqt9Q8wok _20ybqCB_km16M-pkkEr303 fRjmtpN_3s2SXPLaedpFg">
+                                                </div>
+                                                <div class="_3f03M9ur5CdA67h7YnitlZ"
+                                                    id-owa="ActivatedEntry-Elena-actionBar">
+                                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                                        <div class="OJZH9TNubyPXn4TGZTwh6">Elena</div>
+                                                    </div>
+                                                    <div id-owa="ActivatedEntry-Elena-actionBar-icon-arrow-right"
+                                                        class="btn-demo-msg lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="timeline-keys.php" id-owa="ActivatedEntry-Elena"
+                                                class="_2t5Q-Hnk6CMLTD_jiIFScg"><button
+                                                    id-owa="ActivatedEntry-Elena-button"
+                                                    class="_2HgdaHaD4SNDDSFw0ZtW9C _20ll6sp5J0Dyag_9c4yLUl">
+                                                    <div id-owa="ActivatedEntry-Elena-label"
+                                                        class="gIYiFxyTrS15oYmwPZMQX">Ver seguimiento</div>
+                                                </button></a>
+                                        </div>
+                                    </div>
+                                    <div class="_3HDsV4_vcBu9tHEwavwT7g tOKXJqk-0nsqCuQ5hH8n5 _1xLvLpekfEhg6T4CvYrSQa">
+                                        <div class="_1psM3HcidG3b2nQuCZKbtD">
+                                            <div class="_3xOjntVXl5Gr78pDkxQa7b">
+                                                <div id-owa="ActivatedEntry-alberto-icon-starkey"
+                                                    class="lLgn_LpLUXuuA2mBj6_l9 DvT3xRkrM913oqt9Q8wok tA2_f2wtClEFmrvkTBWjf fRjmtpN_3s2SXPLaedpFg">
+                                                </div>
+                                                <div class="_3f03M9ur5CdA67h7YnitlZ"
+                                                    id-owa="ActivatedEntry-alberto-actionBar">
+                                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                                        <div class="OJZH9TNubyPXn4TGZTwh6">alberto</div>
+                                                    </div>
+                                                    <div id-owa="ActivatedEntry-alberto-actionBar-icon-arrow-right"
+                                                        class="btn-demo-msg lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="timeline-keys.php" id-owa="ActivatedEntry-alberto"
+                                                class="_2t5Q-Hnk6CMLTD_jiIFScg"><button
+                                                    id-owa="ActivatedEntry-alberto-button"
+                                                    class="_2HgdaHaD4SNDDSFw0ZtW9C _20ll6sp5J0Dyag_9c4yLUl">
+                                                    <div id-owa="ActivatedEntry-alberto-label"
+                                                        class="gIYiFxyTrS15oYmwPZMQX">Ver seguimiento</div>
+                                                </button></a>
+                                        </div>
+                                    </div>
+                                    <div class="_3HDsV4_vcBu9tHEwavwT7g tOKXJqk-0nsqCuQ5hH8n5 _1xLvLpekfEhg6T4CvYrSQa">
+                                        <div class="_1psM3HcidG3b2nQuCZKbtD">
+                                            <div class="_3xOjntVXl5Gr78pDkxQa7b">
+                                                <div id-owa="ActivatedEntry-Mari-icon-starkey"
+                                                    class="lLgn_LpLUXuuA2mBj6_l9 DvT3xRkrM913oqt9Q8wok _1j1QHrT-Z8EX2GDrku1Zm_ fRjmtpN_3s2SXPLaedpFg">
+                                                </div>
+                                                <div class="_3f03M9ur5CdA67h7YnitlZ"
+                                                    id-owa="ActivatedEntry-Mari-actionBar">
+                                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                                        <div class="OJZH9TNubyPXn4TGZTwh6">Mari</div>
+                                                    </div>
+                                                    <div id-owa="ActivatedEntry-Mari-actionBar-icon-arrow-right"
+                                                        class="btn-demo-msg lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="timeline-keys.php" id-owa="ActivatedEntry-Mari"
+                                                class="_2t5Q-Hnk6CMLTD_jiIFScg"><button
+                                                    id-owa="ActivatedEntry-Mari-button"
+                                                    class="_2HgdaHaD4SNDDSFw0ZtW9C _20ll6sp5J0Dyag_9c4yLUl">
+                                                    <div id-owa="ActivatedEntry-Mari-label"
+                                                        class="gIYiFxyTrS15oYmwPZMQX">Ver seguimiento</div>
+                                                </button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="_3jYoLKiUiAfcWLzyIvvdzv">
+                    <a href="home.php" class="_35hzZaf4kgFPGpZ-yJSvOK menu-home" id-owa="Home-MenuButton">
+                        <div class="_3EMN14xHQGjvMvGgDscjFY">
+                            <div id-owa="Home-MenuIcon-icon-home"
+                                class="lLgn_LpLUXuuA2mBj6_l9 _3q0VkIbBDogGEW2xsSSPVV EeI8uQ7BYoGjiamjmYH4W"></div>Inicio
+                        </div>
+                        <div class="_1UlQHBLPB8bFDpo66iG_Dh">
+                            <div class="_3q7wVqU0JJFQ84CGTI54sS">0</div>
+                        </div>
+                    </a>
+                    <a href="actividad.php" class="_35hzZaf4kgFPGpZ-yJSvOK menu-actividad" id-owa="History-MenuButton">
+                        <div class="_3EMN14xHQGjvMvGgDscjFY">
+                            <div id-owa="History-MenuIcon-icon-history"
+                                class="lLgn_LpLUXuuA2mBj6_l9 _29vZz1cq3pa7GFkP4jLU4_ EeI8uQ7BYoGjiamjmYH4W"></div>
+                            Actividad
+                        </div>
+                        <div class="_1UlQHBLPB8bFDpo66iG_Dh">
+                            <div class="_3q7wVqU0JJFQ84CGTI54sS">0</div>
+                        </div>
+                    </a>
+                    <a href="programacion.php" class="_35hzZaf4kgFPGpZ-yJSvOK menu-programacion"
+                        id-owa="Automation-MenuButton">
+                        <div class="_3EMN14xHQGjvMvGgDscjFY">
+                            <div id-owa="Automation-MenuIcon-icon-automation"
+                                class="lLgn_LpLUXuuA2mBj6_l9 XA_7koKE9Pfc-ch4fEQUq EeI8uQ7BYoGjiamjmYH4W"></div>
+                            Programación
+                        </div>
+                        <div class="_1UlQHBLPB8bFDpo66iG_Dh">
+                            <div class="_3q7wVqU0JJFQ84CGTI54sS">0</div>
+                        </div>
+                    </a>
+                    <a href="menu-mas.php" class="_35hzZaf4kgFPGpZ-yJSvOK menu-mas" id-owa="More-MenuButton">
+                        <div class="_3EMN14xHQGjvMvGgDscjFY">
+                            <div id-owa="More-MenuIcon-icon-more"
+                                class="lLgn_LpLUXuuA2mBj6_l9 _3FWiAWga0p6mpKMKXTtKwv EeI8uQ7BYoGjiamjmYH4W"></div>Más
+                        </div>
+                        <div class="_1UlQHBLPB8bFDpo66iG_Dh">
+                            <div class="_3q7wVqU0JJFQ84CGTI54sS">0</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>(function () { var js = "window['__CF$cv$params']={r:'7c2e08767a986a03',m:'gBlPqPg78.EMsIeeyYMKHCfCiM5eBxffvefJUCA3HAE-1683342657-0-ASs771sNCd5Oq5LMmLuUskrjKTTcFi6A5nwm7FOrjvT3',u:'/cdn-cgi/challenge-platform/h/g'};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.nonce = ''; _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
+</body>
+
+</html>
