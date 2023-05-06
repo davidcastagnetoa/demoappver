@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,shrink-to-fit=no,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <title>Verisure</title>
+    <link href="./static/css/styles-app.css" rel="stylesheet">
+    <link href="./static/css/main.css" rel="stylesheet">
+    <link href="./static/css/styles-inline.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function gup(name) {
+            var regexS = "[\\?&]" + name + "=([^&#]*)";
+            var regex = new RegExp(regexS);
+            var tmpURL = window.location.href;
+            var results = regex.exec(tmpURL);
+            if (results == null)
+                return "";
+            else
+                return results[1];
+        }
+        function msgD() {
+            $('.demo-msg-s').fadeIn(250);
+            setTimeout(function () {
+                $('.demo-msg-s').fadeOut(250);
+            }, 2000);
+        }
+        function msgDP() {
+            $('.demo-msg-popup').fadeIn(250);
+            setTimeout(function () {
+                $('.demo-msg-popup').fadeOut(250);
+            }, 2000);
+        }
+        $(document).ready(function () {
+            $('.btn-demo-msg').click(function () {
+                msgD();
+            });
+            $('.btn-demo-msg-a').click(function (e) {
+                e.preventDefault();
+                msgD();
+            });
+            $('.btn-demo-msg-popup').click(function () {
+                msgDP();
+            });
+        });
+    </script>
+</head>
+
+<body class="menu-home-active">
+    <div class="demo-msg demo-msg-s">
+        <p>Estás interactuando con una demo, para ver más accede a la app de tu alarma.</p>
+    </div>
+    <div class="demo-msg demo-msg-popup">
+        <p>Estás interactuando con una demo, para ver más accede a la app de tu alarma.</p>
+    </div>
+
+    <div id="root" style="overflow:auto;min-height:35em;width:100%;height:100%">
+        <div class="">
+            <div class="_1LVzKHudbtVmGL-QIspRjZ">
+                <div class="_2gPPPXopJdV7wtWFadyXrV">
+                    <div class="_36GMBLg_WZBpVPunw0rFvd">
+                        <div id-owa="Header-hamburger-icon-hamburger"
+                            class="lLgn_LpLUXuuA2mBj6_l9 ov4RRDiLoB6-1fC9WnMYz"></div>
+                    </div>
+                    <div class="_2tAsryRWAB59OCO1-Bfzwh"><img src="./resources/logos/logoSecuritas.svg" alt="logo"
+                            class="_1pUTBetqw44e6E4BIcadLR"></div>
+                    <div class="_3gLRyaJbxmbM5nwwSOBYyU">
+                        <div class="_1K_nHBVtMsY-7aa5-HUF5U">
+                            <div class="_3UcAATgWE-u85R4_NLNyCc">
+                                <div id-owa="Header-hamburger-CurrentInstallationBar-icon-installation-home"
+                                    class="lLgn_LpLUXuuA2mBj6_l9 _19Y80cbdHvmU0yhNZ_1D2x -Ic1bStNoceGh6ffUUGAr"></div>
+                                <div class="_2BPbAnhLD6T42B4bgwe59s"> Casa</div>
+
+                                <div id-owa="Header-hamburger-CurrentInstallationBar-hasMore-icon-arrow-down"
+                                    class="lLgn_LpLUXuuA2mBj6_l9 _6L4-B2gqN7zBvkBmOpUW_ _2ZKtsxGgkaeSun0dEBZx9g"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_1AYvGCfZS5QVWihkHi81EZ">
+                        <div><button id-owa="Header-hamburger-Short-LogoutButton-button"
+                                class="p7h9k3uoIBU5dnxiFq6S_ _1AriCW3Y_1Zcy4EbaHWQqI _2X5Ekd0wxY3EOnsiZjDKuZ">
+                                <div id-owa="Header-hamburger-Short-LogoutButton-label" class="_1zmvcav1PKZ5RL2kDRrPEj">
+                                    Cerrar sesión</div>
+                            </button><button id-owa="Header-hamburger-Large-LogoutButton-button"
+                                class="_2HgdaHaD4SNDDSFw0ZtW9C _38fjyISE29qC_B1MeCX1oC">
+                                <div id-owa="Header-hamburger-Large-LogoutButton-label" class="gIYiFxyTrS15oYmwPZMQX">
+                                    Cerrar sesión</div>
+                            </button></div>
+                    </div>
+                    <div class="_3MQByQXPPAsm0pM2Ln2Zc6"></div>
+                </div>
+                <div class="_2wV3JMiQu9BbujcQUqzmWd demo-app-container" data-lazyload-listened="4">
+
+                    <div class="_3ouQo9A_JvskMfQfiqMSzf" id-owa="Home (title not shown)">
+                        <div class="_2uONmzCy4bUx8m_H7aOtc_">
+
+                            <div class="_25K46gqJQxFALfy6FvRqDU regular"> Casa</div>
+                        </div>
+                        <div class="_2ZxJNAiMuexcpiL8Urh6Wb" id-owa="updateStateButton">
+                            <div id-owa="updateStateButton-icon-icon-refresh"
+                                class="lLgn_LpLUXuuA2mBj6_l9 _3OozDHxyYUAr1tSErWu1Sd _12VNZ4W_QPFvtaD80Fe3AE"></div>
+                            Actualizar estado
+                        </div>
+                        <div class="_2uONmzCy4bUx8m_H7aOtc_">
+                            <div class="">
+                                <div class="_1E-iEuHp2_EqpGdyakqKZ9">
+                                    <button id-owa="mainAlarm" type="button"
+                                        class="_2yeNn3B7Ltvaf11kIfW4Ta _1aIN19V-XsvAdL1FneKWlZ">
+                                        <div id-owa="mainAlarm-icon-fast-disarmed"
+                                            class="estado-alarma-icon lLgn_LpLUXuuA2mBj6_l9 _365CN-Yl8hpS8DcZOb-CZV">
+                                        </div>
+                                        <div class="lds-ring lds-home">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </button>
+                                    <div class="_1yPWRKvEEKPB05hmhewf-X regular">Estado Alarma</div>
+                                    <div class="_1xEeFFCJ2GefsSMnEgKdui estado-alarma-text medium">Desconectado</div>
+                                </div>
+                            </div>
+                            <div class="_2z3df6lwVlq6beG_FPYgy5 cambiar-estado-alarma popup-cambiar">
+                                <div class="_1tUx7F0tPY_dzObr_rfZ-f">
+                                    <div class="_2onA4qgPN5yC-Ig07zYD6S">
+                                        <span class="myBm7xFkB4izlZJ9yOR0b cambiar-estado-alarma__x">Cancelar</span>
+                                        <div class="V6MJ18-nJ3c9w__6HRN7H">CAMBIAR ESTADO DE ALARMA</div>
+                                        <div style="padding: 0 1rem;" class="_3P_Cnn08YTc5Hacwe63e_y light">¿Está seguro
+                                            que desea cambiar el estado de
+                                            su alarma?</div>
+                                        <div data-estado="" id-owa="alarm-modal-next"
+                                            class="_269iHVVj4I6fbfnawYvPQ4 cambiar-estado-alarma__next regular">
+                                            Confirmar
+                                            cambios</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_2z3df6lwVlq6beG_FPYgy5 otros-modos popup-cambiar">
+                                <div class="_1tUx7F0tPY_dzObr_rfZ-f">
+                                    <div class="_2onA4qgPN5yC-Ig07zYD6S">
+                                        <span class="myBm7xFkB4izlZJ9yOR0b cambiar-estado-alarma__x">Cancelar</span>
+                                        <div class="V6MJ18-nJ3c9w__6HRN7H">CAMBIAR ESTADO DE ALARMA</div>
+                                        <div style="padding: 0 1rem;"
+                                            class="_3P_Cnn08YTc5Hacwe63e_y otros-modos__q light">¿Está seguro que desea
+                                            cambiar el estado de
+                                            su alarma?</div>
+                                        <div class="_2Nh96d0hCsTAE4uWeYxJg0 otros-modos__o">
+                                            <div class="_25zAVbtllW8Q_cZhIikCqX"><button
+                                                    data-cambiar="estado-desconectar" id-owa="main-alarm-DARM"
+                                                    type="button"
+                                                    class="uOu0brZndZuOvv9ZO3m27 _3SuEut1x0Hw5IOJBYjKQLn _2hsoYURFEbIwJOMuXVQaQc">
+                                                    <div id-owa="main-alarm-DARM-icon-fast-disarmed"
+                                                        class="lLgn_LpLUXuuA2mBj6_l9 _365CN-Yl8hpS8DcZOb-CZV"></div>
+                                                </button>
+                                                <div class="S2Vf4dNMEUq41e50MxPo light">Desconectado</div>
+                                            </div>
+                                            <div class="_25zAVbtllW8Q_cZhIikCqX"><button data-cambiar="estado-dia"
+                                                    id-owa="main-alarm-ARMDAY" type="button"
+                                                    class="uOu0brZndZuOvv9ZO3m27 _2yhNGhl1MBaD1VTQZ1HsVk _2hsoYURFEbIwJOMuXVQaQc">
+                                                    <div id-owa="main-alarm-ARMDAY-icon-fast-partial-day"
+                                                        class="lLgn_LpLUXuuA2mBj6_l9 _3iCIJc6YmOovSefjec6-Mb"></div>
+                                                </button>
+                                                <div class="S2Vf4dNMEUq41e50MxPo light">Parcial día</div>
+                                            </div>
+                                            <div class="_25zAVbtllW8Q_cZhIikCqX"><button data-cambiar="estado-noche"
+                                                    id-owa="main-alarm-ARMNIGHT" type="button"
+                                                    class="uOu0brZndZuOvv9ZO3m27 _2yhNGhl1MBaD1VTQZ1HsVk _2hsoYURFEbIwJOMuXVQaQc">
+                                                    <div id-owa="main-alarm-ARMNIGHT-icon-fast-partial-night"
+                                                        class="lLgn_LpLUXuuA2mBj6_l9 _2mTnHHbg-D6LGOx4NObSP7"></div>
+                                                </button>
+                                                <div class="S2Vf4dNMEUq41e50MxPo light">Parcial noche</div>
+                                            </div>
+                                            <div class="_25zAVbtllW8Q_cZhIikCqX"><button data-cambiar="estado-total"
+                                                    id-owa="main-alarm-ARM" type="button"
+                                                    class="uOu0brZndZuOvv9ZO3m27 _2yhNGhl1MBaD1VTQZ1HsVk _2hsoYURFEbIwJOMuXVQaQc">
+                                                    <div id-owa="main-alarm-ARM-icon-fast-armed-away"
+                                                        class="lLgn_LpLUXuuA2mBj6_l9 _3-_a6wIcqFl_enCsQE5frf"></div>
+                                                </button>
+                                                <div class="S2Vf4dNMEUq41e50MxPo light">Conexión total</div>
+                                            </div>
+                                        </div>
+                                        <div data-estado="" id-owa="alarm-modal-next"
+                                            class="VgPvHdtGpS2-qNgHNk4uT cambiar-estado-alarma__next">Confirmar cambios
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="_1EcsibrkHxNVusrUEWeWAP buttons-conectar"><button data-cambiar="estado-total"
+                                id-owa="Button5-button"
+                                class="btn-conectar p7h9k3uoIBU5dnxiFq6S_ _1E2tR1FNlgTuiVezfkdZZN _3T7gZDcLveCfKbytuCaORZ">
+                                <div id-owa="Button5-label" class="_1zmvcav1PKZ5RL2kDRrPEj">Conectar total</div>
+                            </button><button id-owa="Button5-button"
+                                class="btn-otros-modos p7h9k3uoIBU5dnxiFq6S_ _1E2tR1FNlgTuiVezfkdZZN _2JJrM1XeyeHXdtanqze1-9">
+                                <div id-owa="Button5-label" class="_1zmvcav1PKZ5RL2kDRrPEj">Otros modos</div>
+                            </button></div>
+                        <div class="_1EcsibrkHxNVusrUEWeWAP buttons-desconectar">
+                            <button data-cambiar="estado-desconectar" id-owa="Button5-button"
+                                class="btn-conectar p7h9k3uoIBU5dnxiFq6S_ _1E2tR1FNlgTuiVezfkdZZN _2JJrM1XeyeHXdtanqze1-9">
+                                <div id-owa="Button5-label" class="_1zmvcav1PKZ5RL2kDRrPEj">Desconectar</div>
+                            </button>
+                        </div>
+                        <div></div>
+                        <div class="_3HMAeTFa1TT9Tacv6yZlsA">
+                            <div class="_3f03M9ur5CdA67h7YnitlZ" id-owa="PhotodectorCard-actionBar">
+                                <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                    <div class="OJZH9TNubyPXn4TGZTwh6">FOTOGRAFÍAS</div>
+                                </div>
+                                <a href="photodetector.php" id-owa="PhotodectorCard-actionBar-icon-arrow-right"
+                                    class="lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P"></a>
+                            </div>
+                            <div class="_2ssPUaoiCj9hj_99KByxWJ">
+                                <div class="_3-xcpYFWUEUOa5wuH0A4K2" style="max-width: 100%;">
+                                    <a href="photodetector.php?popup=salon" class="_1RIa3Kghf_Dw1Ov-J9Btws"
+                                        style="width: 45%;">
+                                        <div id-owa="ImageB643-img"
+                                            class="_3Tfdanqcx6dd4_ixzFv5PA _2E0oIG4Knn_TGJ8o03ocWm btn-popup-fotos-salon"
+                                            style="width: auto;"><img src="resources/img/camara-perro.png"
+                                                style="width: 130%;"></div>
+                                        <div class="_3MfQbFRsduZq2jCKhDRyZm">
+                                            <div class="_6OYAIjOKbke6HU0b1cG08"><span
+                                                    class="lvK9oc4JhMuufuwzxyjPd">Salon</span>
+                                                <div class="_2k51w5muZSGOyElb77OrOe">Fotodetector</div>
+                                            </div>
+                                            <div id-owa="Icon1-icon-multiple-images"
+                                                class="lLgn_LpLUXuuA2mBj6_l9 _3CQ5LH1h5Yds5uRPi36-ps _21i72QhUR3qZ2r1nwj-T_S">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="photodetector.php?popup=entrada" class="_1RIa3Kghf_Dw1Ov-J9Btws"
+                                        style="width: 45%;">
+                                        <div id-owa="ImageB643-img"
+                                            class="_3Tfdanqcx6dd4_ixzFv5PA _2E0oIG4Knn_TGJ8o03ocWm btn-popup-fotos-pasillo"
+                                            style="width: auto;"><img src="resources/img/camara-entrada.png"
+                                                style="width: 130%;"></div>
+                                        <div class="_3MfQbFRsduZq2jCKhDRyZm">
+                                            <div class="_6OYAIjOKbke6HU0b1cG08"><span
+                                                    class="lvK9oc4JhMuufuwzxyjPd">Entrada</span>
+                                                <div class="_2k51w5muZSGOyElb77OrOe">Fotodetector</div>
+                                            </div>
+                                            <div id-owa="Icon1-icon-multiple-images"
+                                                class="lLgn_LpLUXuuA2mBj6_l9 _3CQ5LH1h5Yds5uRPi36-ps _21i72QhUR3qZ2r1nwj-T_S">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="timeline.php" class="_2t5Q-Hnk6CMLTD_jiIFScg"><button
+                                    id-owa="PhotodectorCard-PhotoGallery-button"
+                                    class="_2HgdaHaD4SNDDSFw0ZtW9C _20ll6sp5J0Dyag_9c4yLUl">
+                                    <div id-owa="PhotodectorCard-PhotoGallery-label" class="gIYiFxyTrS15oYmwPZMQX">
+                                        Galería de imágenes</div>
+                                </button></a>
+                        </div>
+                        <div class="lazyload-wrapper card-videovigilancia">
+                            <div class="_3HMAeTFa1TT9Tacv6yZlsA">
+                                <div class="_3f03M9ur5CdA67h7YnitlZ" id-owa="PhotodectorCard-actionBar">
+                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                        <div class="OJZH9TNubyPXn4TGZTwh6">VIDEOVIGILANCIA</div>
+                                    </div>
+                                    <a href="videovigilancia.php" id-owa="PhotodectorCard-actionBar-icon-arrow-right"
+                                        class="lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P"></a>
+                                </div>
+                                <div class="_2ssPUaoiCj9hj_99KByxWJ">
+                                    <div class="flex-container">
+                                        <div class="medium text-black"><span
+                                                class="lLgn_LpLUXuuA2mBj6_l9 ScKvTTECGQdAZVJqVXkIA"></span>Cámara</div>
+                                        <a href="videovigilancia.php?popup=directo" class="text-red medium">Ver
+                                            ahora</a>
+                                    </div>
+                                </div>
+                                <a href="videovigilancia-grabaciones.php" class="_2t5Q-Hnk6CMLTD_jiIFScg"><button
+                                        id-owa="PhotodectorCard-PhotoGallery-button"
+                                        class="_2HgdaHaD4SNDDSFw0ZtW9C _20ll6sp5J0Dyag_9c4yLUl">
+                                        <div id-owa="PhotodectorCard-PhotoGallery-label" class="gIYiFxyTrS15oYmwPZMQX">
+                                            Grabaciones</div>
+                                    </button></a>
+                            </div>
+                        </div>
+                        <div class="lazyload-wrapper card-guardian">
+                            <div class="_3HMAeTFa1TT9Tacv6yZlsA">
+                                <div class="_3f03M9ur5CdA67h7YnitlZ" id-owa="OnlineStoreCard-actionBar">
+                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                        <div class="OJZH9TNubyPXn4TGZTwh6">GUARDIÁN VERISURE</div>
+                                    </div>
+                                    <a href="guardian.php" id-owa="OnlineStoreCard-actionBar-icon-arrow-right"
+                                        class="lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P">
+                                    </a>
+                                </div>
+                                <div class="flex-container">
+                                    <a href="guardian.php?popup=plan-sos" class="_2H8rL-go5YxUW_zX7ga-st guardian-sos">
+                                        <button id-owa="ChatBubble" type="button" class="_2nZr7LP4HSeHJrmNY9u0SU">
+                                            <div class="text-red medium">SOS</div>
+                                            <div class="_26GTOBYw_dN60wWxeyQ1Wq"></div>
+                                        </button>
+                                    </a>
+                                    <p class="regular text-grey">Para solicitar ayuda, mantener pulsado durande 2
+                                        segundos.</p>
+                                </div>
+                                <div class="_3f03M9ur5CdA67h7YnitlZ" id-owa="OnlineStoreCard-actionBar">
+                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                        <div class="OJZH9TNubyPXn4TGZTwh6">ACOMPÁÑAME</div>
+                                    </div>
+                                </div>
+                                <a href="guardian.php?popup=plan-acompa" class="card-countdown">
+                                    <div class="countdown text-grey">00:00:00</div>
+                                    <p class="text-grey">Pulsa para iniciar</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lazyload-wrapper">
+                            <div class="_3HMAeTFa1TT9Tacv6yZlsA">
+                                <div class="_3f03M9ur5CdA67h7YnitlZ" id-owa="SentinelCard-actionBar">
+                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                        <div class="OJZH9TNubyPXn4TGZTwh6">CONFORT Y CLIMA</div>
+                                    </div>
+                                    <a href="sentinel.php" id-owa="SentinelCard-actionBar-icon-arrow-right"
+                                        class="lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P">
+                                    </a>
+                                </div>
+                                <div class="_1zxz9w10ZGYXF1d7P-FBJN">
+                                    <div class="_3VvYplw5-x4Cw0auRvsDu3">
+                                        <div class="_217szXCWbQ2yq9uIBNFaHN">cocina</div>
+                                        <div class="_3TVWKWRrNrteM2-4V-Crd2">Aire</div>
+                                        <div class="_2QlWPujQCvFnBudBiEBqf-">Buena</div>
+                                        <div id-owa="Icon1-icon-climate-temperature"
+                                            class="lLgn_LpLUXuuA2mBj6_l9 _2XKELvii-Z66IfEEHByclK _2XeEtn_52UtMTtXfG88GIW">
+                                        </div>
+                                        <div class="_3hEncUtTLn4Zz7eX7S9vPw">21°C</div>
+                                        <div id-owa="Icon1-icon-climate-humidity"
+                                            class="lLgn_LpLUXuuA2mBj6_l9 _2fBXbkAiD4vO9QRAwEBWAu _2uOORwnPIDyHCfRIKNuyBh">
+                                        </div>
+                                        <div class="_1JvTnFbIElNqGqicILxYCG">56%</div>
+                                    </div>
+                                    <div class="_1RcVK6fgnVz03WQFF67uKr _22mHUNoiT_deRYtRnnJ91u"></div>
+                                    <div class="_3NeOMN7hPSEUCo1B4B8o6R">
+                                        <div id-owa="Icon1-icon-location"
+                                            class="lLgn_LpLUXuuA2mBj6_l9 GnS65i_T1nFQj4t3m5XzP _3woad1A6Z8jFgMArzhFubb">
+                                        </div>
+                                        <div class="_2IWLB_uBnjqc33a_kGN934">Fuenlabrada</div>
+                                        <div class="_1jaPhX-5WLRToYIVfVsePo">Nublado</div>
+                                        <div id-owa="Icon1-icon-climate-cloudy"
+                                            class="lLgn_LpLUXuuA2mBj6_l9 _1UDgSb578Rr_oWL7iWkKJ6 _2NacHlPmgA7ADBc7dXsm64">
+                                        </div>
+                                        <div class="_2VA4p-wxKMSivAWBm4HY3v">11°C</div>
+                                        <div class="_1-PZq65ShUNiN1usxhD0yw">87%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lazyload-wrapper">
+                            <div class="_3HMAeTFa1TT9Tacv6yZlsA">
+                                <div class="_3f03M9ur5CdA67h7YnitlZ" id-owa="KeysRemotesCard-actionBar">
+                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                        <div class="OJZH9TNubyPXn4TGZTwh6">LLAVES Y MANDOS</div>
+                                    </div>
+                                    <a href="keys-remotes.php" id-owa="KeysRemotesCard-actionBar-icon-arrow-right"
+                                        class="lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P">
+                                    </a>
+                                </div>
+                                <div class="_20-LSech5VpeVmcTCTEKVv">
+                                    <div class="NwZUQQ-erOXILPFaIIJat">
+                                        <div class="xkIayTRXFApt0ftX1N1Z" style="min-width: 5.5rem;">
+                                            <div class="_34TP55fQuZq6Kn1_koRR8P" style="min-width: 0;">2 oct<br>12:53
+                                            </div>
+                                            <div class="_2wd6Skziw_YSyxoqJjuM9i" style="left: 1.8rem;"></div>
+                                            <div id-owa="IconBadge2"
+                                                class="_2ExZWapNc93vTQz6w5ZffE _3BTRHeSF8HQ586B4C00OUt _2kCP9seV1lxR2_PaK3xBn6 GUDcdfj_whSxr6dsqSamh">
+                                                <div id-owa="IconBadge2-icon-fast-disarmed"
+                                                    class="lLgn_LpLUXuuA2mBj6_l9 _365CN-Yl8hpS8DcZOb-CZV APJnmzYAo_Uo2y4iaK6Bn">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="_3aMtmRVNr1Raxym-FfWjgS"><span
+                                                class="_2WISna6qGaP0SaC1FWVj0I">Desconexión</span>
+                                            <div class="JLjWx5ZA3wiOvYqPdXiFI">Desconectado</div>
+                                            <div class="ryoL4AL2SqJXhumHhbcie">Por Alberto</div>
+                                        </div>
+                                    </div>
+                                    <div class="NwZUQQ-erOXILPFaIIJat">
+                                        <div class="xkIayTRXFApt0ftX1N1Z" style="min-width: 5.5rem;">
+                                            <div class="_34TP55fQuZq6Kn1_koRR8P" style="min-width: 0;">3 jun<br>11:25
+                                            </div>
+                                            <div id-owa="IconBadge2"
+                                                class="_2ExZWapNc93vTQz6w5ZffE _29uYUNL301lda37hGs1mqC _2kCP9seV1lxR2_PaK3xBn6 GUDcdfj_whSxr6dsqSamh">
+                                                <div id-owa="IconBadge2-icon-contact-open"
+                                                    class="lLgn_LpLUXuuA2mBj6_l9 _1zCQSWAUva9lBHhaAstIve APJnmzYAo_Uo2y4iaK6Bn">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="_3aMtmRVNr1Raxym-FfWjgS"><span
+                                                class="_2WISna6qGaP0SaC1FWVj0I">Fichaje entrada</span>
+                                            <div class="JLjWx5ZA3wiOvYqPdXiFI">Entrada de empleado</div>
+                                            <div class="ryoL4AL2SqJXhumHhbcie">Por perdida</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lazyload-wrapper">
+                            <div class="_3HMAeTFa1TT9Tacv6yZlsA">
+                                <div class="_3f03M9ur5CdA67h7YnitlZ" id-owa="OnlineStoreCard-actionBar">
+                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                        <div class="OJZH9TNubyPXn4TGZTwh6">OTRAS SOLUCIONES DE SEGURIDAD</div>
+                                    </div>
+                                    <div id-owa="OnlineStoreCard-actionBar-icon-arrow-right"
+                                        class="btn-demo-msg lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P">
+                                    </div>
+                                </div>
+                                <div class="_1Rf95tqS1N1w8nJSVQZxxf">Descubre todas nuestras soluciones de seguridad y
+                                    cómo Securitas Direct puede ayudarte a mejorar la seguridad de tu hogar o domicilio.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lazyload-wrapper card-llamada-silenciosa">
+                            <div class="_3HMAeTFa1TT9Tacv6yZlsA">
+                                <div class="_3f03M9ur5CdA67h7YnitlZ" id-owa="ChatCard-actionBar">
+                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                        <div class="OJZH9TNubyPXn4TGZTwh6">LLAMADA SILENCIOSA AL PANEL</div>
+                                    </div>
+                                    <a href="llamada-silenciosa.php" id-owa="ChatCard-actionBar-icon-arrow-right"
+                                        class="lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P">
+                                    </a>
+                                </div>
+                                <div class="_850uU-MMykOfPSvK0Rfi0">
+                                    <div class="_2oets0YyGdhVBOgcecUDFU">
+                                        <a href="#" class="_2H8rL-go5YxUW_zX7ga-st btn-llamada-silenciosa">
+                                            <button type="button" class="_2nZr7LP4HSeHJrmNY9u0SU">
+                                                <div
+                                                    class="lLgn_LpLUXuuA2mBj6_l9 _2f1LTm5QiAvEr2K1eLD-G3 _1qrWeJYw9N06p0VOBHixdc">
+                                                </div>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lazyload-wrapper">
+                            <div class="_3HMAeTFa1TT9Tacv6yZlsA">
+                                <div class="_3f03M9ur5CdA67h7YnitlZ" id-owa="ChatCard-actionBar">
+                                    <div class="_14oV4kdPC3XplniYfTe2Y7">
+                                        <div class="OJZH9TNubyPXn4TGZTwh6">AYUDA</div>
+                                    </div>
+                                    <a href="help.php" id-owa="ChatCard-actionBar-icon-arrow-right"
+                                        class="lLgn_LpLUXuuA2mBj6_l9 _28ZO96AahA2o1cVeM5Z4-a _2K6dLqyJ9iVYBapwT2Dy5P">
+                                    </a>
+                                </div>
+                                <div class="_850uU-MMykOfPSvK0Rfi0">
+                                    <div class="_1GUdGWa9SUMF1jdGohw6s3">Si tienes alguna duda, ponte en contacto con
+                                        nosotros:</div>
+                                    <div class="_2oets0YyGdhVBOgcecUDFU">
+                                        <a href="chat.php" class="_2H8rL-go5YxUW_zX7ga-st"><button id-owa="ChatBubble"
+                                                type="button" class="_2nZr7LP4HSeHJrmNY9u0SU">
+                                                <div id-owa="ChatBubble-icon-verisure"
+                                                    class="lLgn_LpLUXuuA2mBj6_l9 _2f1LTm5QiAvEr2K1eLD-G3 _1qrWeJYw9N06p0VOBHixdc">
+                                                </div>
+                                                <div class="_26GTOBYw_dN60wWxeyQ1Wq"></div>
+                                            </button>
+                                            <div class="C8-WS-LTGWP67cKH3VwBP">Chat</div>
+                                            <div class="_1lm3t3mvadTFoeLXuyudZB">Asistente virtual</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="estado-alarma-v">
+                            <p><span
+                                    class="lLgn_LpLUXuuA2mBj6_l9 hY447C9OPRp9WyFJ3cbij APJnmzYAo_Uo2y4iaK6Bn"></span>Estado
+                                de alarma cambiado</p>
+                        </div>
+                        <div class="_1Hv6YiELUTKsEk2UpG3Zb3 plan-popup plan-popup-llamada">
+                            <div class="_1ClHZXDETOIq8HwBnpE0qc">
+                                <div class="_7BhxEJdVOBYfEPm_333t6" id-owa="PhotoRequestQualitySelector25-header">
+                                    LLamada silenciosa</div>
+                                <div class="_3opCh2Cq5MRIQpVCIhoykv">
+                                    <div class="_1y-dYH8Rze7nRijeO18Iyr">
+                                        <p class="_2na3Qu_dQQPPJW81u88Ya6">Al presionar el botón de llamada, se realiza
+                                            una llamada silenciosa al panel de tu alarma, que se descolgará
+                                            automáticamente y te permitirá saber lo que ocurre sin que nadie sepa que
+                                            estás escuchando.</p>
+                                    </div>
+                                </div>
+                                <div class="SjCWk9G6kQtQXqB1IzMy2 P6KRMnW5V3BNBwC0W-wxT">
+                                    <button class="_11NxRxxJ3afO9Qil8k1lqA _3s6tgosb1_SCj3XmUA0RlG">
+                                        <div id-owa="PhotoRequestQualitySelector25-cancel-label"
+                                            class="gIYiFxyTrS15oYmwPZMQX plan-popup__x">Cerrar</div>
+                                    </button>
+                                    <button class="_11NxRxxJ3afO9Qil8k1lqA _3s6tgosb1_SCj3XmUA0RlG">
+                                        <div id-owa="PhotoRequestQualitySelector25-cancel-label"
+                                            class="gIYiFxyTrS15oYmwPZMQX text-red">Llamar</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="_3jYoLKiUiAfcWLzyIvvdzv">
+                        <a href="home.php" class="_35hzZaf4kgFPGpZ-yJSvOK menu-home" id-owa="Home-MenuButton">
+                            <div class="_3EMN14xHQGjvMvGgDscjFY">
+                                <div id-owa="Home-MenuIcon-icon-home"
+                                    class="lLgn_LpLUXuuA2mBj6_l9 _3q0VkIbBDogGEW2xsSSPVV EeI8uQ7BYoGjiamjmYH4W"></div>
+                                Inicio
+                            </div>
+                            <div class="_1UlQHBLPB8bFDpo66iG_Dh">
+                                <div class="_3q7wVqU0JJFQ84CGTI54sS">0</div>
+                            </div>
+                        </a>
+                        <a href="actividad.php" class="_35hzZaf4kgFPGpZ-yJSvOK menu-actividad"
+                            id-owa="History-MenuButton">
+                            <div class="_3EMN14xHQGjvMvGgDscjFY">
+                                <div id-owa="History-MenuIcon-icon-history"
+                                    class="lLgn_LpLUXuuA2mBj6_l9 _29vZz1cq3pa7GFkP4jLU4_ EeI8uQ7BYoGjiamjmYH4W"></div>
+                                Actividad
+                            </div>
+                            <div class="_1UlQHBLPB8bFDpo66iG_Dh">
+                                <div class="_3q7wVqU0JJFQ84CGTI54sS">0</div>
+                            </div>
+                        </a>
+                        <a href="programacion.php" class="_35hzZaf4kgFPGpZ-yJSvOK menu-programacion"
+                            id-owa="Automation-MenuButton">
+                            <div class="_3EMN14xHQGjvMvGgDscjFY">
+                                <div id-owa="Automation-MenuIcon-icon-automation"
+                                    class="lLgn_LpLUXuuA2mBj6_l9 XA_7koKE9Pfc-ch4fEQUq EeI8uQ7BYoGjiamjmYH4W"></div>
+                                Programación
+                            </div>
+                            <div class="_1UlQHBLPB8bFDpo66iG_Dh">
+                                <div class="_3q7wVqU0JJFQ84CGTI54sS">0</div>
+                            </div>
+                        </a>
+                        <a href="menu-mas.php" class="_35hzZaf4kgFPGpZ-yJSvOK menu-mas" id-owa="More-MenuButton">
+                            <div class="_3EMN14xHQGjvMvGgDscjFY">
+                                <div id-owa="More-MenuIcon-icon-more"
+                                    class="lLgn_LpLUXuuA2mBj6_l9 _3FWiAWga0p6mpKMKXTtKwv EeI8uQ7BYoGjiamjmYH4W"></div>
+                                Más
+                            </div>
+                            <div class="_1UlQHBLPB8bFDpo66iG_Dh">
+                                <div class="_3q7wVqU0JJFQ84CGTI54sS">0</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var thisEstado;
+            var dataEstado;
+            function ldEstado() {
+                setTimeout(function () {
+                    $('.lds-home').css('display', 'inline-block');
+                    $('.estado-alarma-text').text('Actualizando estado');
+                    $('body').css('opacity', '0.5');
+                }, 100);
+                setTimeout(function () {
+                    $('.lds-home').css('display', 'none');
+                    $('body').css('opacity', '1');
+                }, 1800);
+            }
+            function msgV() {
+                setTimeout(function () {
+                    $('.estado-alarma-v').fadeIn(250);
+                }, 1800);
+                setTimeout(function () {
+                    $('.estado-alarma-v').fadeOut(250);
+                }, 4800);
+            }
+            function setEstado(clase, texto) {
+                $('.buttons-desconectar').css('display', 'none');
+                $('.buttons-conectar').css('display', 'block');
+                $('.cambiar-estado-alarma').fadeOut(200);
+                $('.otros-modos').fadeOut(200);
+                $('body').removeClass('alarma-desconectar alarma-total alarma-noche alarma-dia');
+                ldEstado();
+                msgV();
+                setTimeout(function () {
+                    $('.otros-modos__o').css('display', 'flex');
+                    $('.otros-modos__q').css('display', 'none');
+                    $('.otros-modos .cambiar-estado-alarma__next').addClass('VgPvHdtGpS2-qNgHNk4uT');
+                    $('.otros-modos .cambiar-estado-alarma__next').removeClass('_269iHVVj4I6fbfnawYvPQ4');
+                }, 300);
+                $('body').addClass(clase);
+                setTimeout(function () {
+                    $('.estado-alarma-text').text(texto);
+                }, 1800);
+            }
+            $(document).ready(function () {
+                $('.btn-conectar').click(function () {
+                    $('.cambiar-estado-alarma').css('display', 'block');
+                    thisEstado = $(this).attr('data-cambiar');
+                    $('.cambiar-estado-alarma .cambiar-estado-alarma__next').attr('data-estado', thisEstado);
+                });
+                $('.btn-otros-modos').click(function () {
+                    $('.otros-modos').css('display', 'block');
+                });
+                $('.cambiar-estado-alarma__x').click(function () {
+                    $('.popup-cambiar').fadeOut(200);
+                    $('.cambiar-estado-alarma__next').attr('data-estado', '');
+                    setTimeout(function () {
+                        $('.otros-modos__o').css('display', 'flex');
+                        $('.otros-modos__q').css('display', 'none');
+                        $('.otros-modos .cambiar-estado-alarma__next').addClass('VgPvHdtGpS2-qNgHNk4uT');
+                        $('.otros-modos .cambiar-estado-alarma__next').removeClass('_269iHVVj4I6fbfnawYvPQ4');
+                    }, 300);
+                });
+                $('.cambiar-estado-alarma__next').click(function () {
+                    dataEstado = $(this).attr('data-estado');
+                    switch (dataEstado) {
+                        case 'estado-total':
+                            setEstado('alarma-total', 'Modo total');
+                            $('.buttons-conectar').css('display', 'none');
+                            $('.buttons-desconectar').css('display', 'block');
+                            break;
+                        case 'estado-desconectar':
+                            setEstado('alarma-desconectar', 'Desconectado');
+                            break;
+                        case 'estado-noche':
+                            setEstado('alarma-noche', 'Parcial noche');
+                            break;
+                        case 'estado-dia':
+                            setEstado('alarma-dia', 'Parcial día');
+                            break;
+                        default:
+                            setEstado('alarma-desconectar', 'Desconectado');
+                    }
+                    $('.otros-modos__o .uOu0brZndZuOvv9ZO3m27').addClass('_2yhNGhl1MBaD1VTQZ1HsVk');
+                    $('.otros-modos__o .uOu0brZndZuOvv9ZO3m27').removeClass('_3SuEut1x0Hw5IOJBYjKQLn');
+                    $('.otros-modos__o').find("[data-cambiar='" + dataEstado + "']").removeClass('_2yhNGhl1MBaD1VTQZ1HsVk');
+                    $('.otros-modos__o').find("[data-cambiar='" + dataEstado + "']").addClass('_3SuEut1x0Hw5IOJBYjKQLn');
+                });
+
+                $('.otros-modos__o ._25zAVbtllW8Q_cZhIikCqX .uOu0brZndZuOvv9ZO3m27').click(function () {
+                    $('.otros-modos__o').css('display', 'none');
+                    $('.otros-modos__q').css('display', 'block');
+                    $('.otros-modos .cambiar-estado-alarma__next').removeClass('VgPvHdtGpS2-qNgHNk4uT');
+                    $('.otros-modos .cambiar-estado-alarma__next').addClass('_269iHVVj4I6fbfnawYvPQ4');
+                    thisEstado = $(this).attr('data-cambiar');
+                    $('.otros-modos .cambiar-estado-alarma__next').attr('data-estado', thisEstado);
+                });
+
+                $('.btn-llamada-silenciosa').click(function (e) {
+                    e.preventDefault();
+                    $('.plan-popup-llamada').css('display', 'flex');
+                });
+                $('.plan-popup__x').click(function () {
+                    $('.plan-popup-llamada').fadeOut(200);
+                });
+                $('.plan-popup__x').click(function () {
+                    $('.plan-popup').fadeOut(200);
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>
